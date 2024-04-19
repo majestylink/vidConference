@@ -8,7 +8,64 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--<title>Login & Registration Form | CoderGirl</title>-->
   <!---Custom CSS File--->
-  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{#  <link rel="stylesheet" href="{% static 'css/style.css' %}">#}
+
+    <style>
+        .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  width: 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input[type="text"],
+.form input[type="submit"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.form center {
+  margin-top: 10px;
+}
+
+.form center p {
+  margin: 0;
+}
+
+    </style>
+
 </head>
 <body>
   <div class="container">

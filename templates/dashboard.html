@@ -8,6 +8,41 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Video Conference</title>
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<style>
+    .dashboard {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.dashboard h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.dashboard .button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard .button:hover {
+  background-color: #0056b3;
+}
+
+</style>
+
   <body>
     <div class="dashboard">
         <h1>Welcome, {{name}}!</h1>

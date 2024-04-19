@@ -8,7 +8,71 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!--<title>Login & Registration Form | CoderGirl</title>-->
   <!---Custom CSS File--->
-  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{#  <link rel="stylesheet" href="{% static 'css/style.css' %}">#}
+
+    <style>
+        .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.registration {
+  width: 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration header {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.registration form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration input[type="text"],
+.registration input[type="password"],
+.registration input[type="submit"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.registration input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.registration input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.signup {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.signup a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+    </style>
+
 </head>
 <body>
   <div class="container">
@@ -32,6 +96,10 @@
       <div class="signup">
         <span class="signup">Already have an account?
           <a href="{% url 'login' %}"><label for="check">Signin</label></a>
+        </span> <br><br>
+
+          <span class="signup">Go back to <a href="/">home page</a>
+{#         <a href="/"><label for="check">Home</label></a>#}
         </span>
       </div>
     </div>
